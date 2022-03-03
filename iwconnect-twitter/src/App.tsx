@@ -1,15 +1,30 @@
 import React from "react";
 import "./App.css";
-import Button from "./components/Button/Button";
+import "bootstrap/dist/css/bootstrap.min.css";
+import { Home } from "./containers/home/components/Home";
+import ButtonClass from "./components/Button/ButtonClass";
 
 function App() {
   return (
-    <>
-      <Button name="Tweet1" backgroundColor="red" textColor="white" />
-      <Button name="Tweet2" backgroundColor="yellow" textColor="blue" />
-      <Button name="Tweet3" backgroundColor="green" textColor="orange" />
-      <Button name="Tweet3" backgroundColor="green" />
-    </>
+    <div
+      className="container-fluid"
+      style={{ background: "red", height: "100vh" }}
+    >
+      <div className="row">
+        <div
+          className="container"
+          style={{ background: "blue", height: "100vh" }}
+        >
+          {/*application goes here*/}
+          <Home />
+          <ButtonClass
+            backgroundColor={"yello"}
+            name="Button"
+            textColor="blue"
+          />
+        </div>
+      </div>
+    </div>
   );
 }
 
