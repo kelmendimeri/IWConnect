@@ -5,7 +5,7 @@ import { Search } from "./Search";
 
 export const Home = () => {
   return (
-    <div className="row">
+    <div className="row" style={{ margin: "5px" }}>
       <Navbar />
       <Main />
       <Search />

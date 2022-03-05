@@ -4,18 +4,30 @@ interface Props {
   backgroundColor: string;
   textColor?: string;
   name?: string;
+  width?: string;
+  height?: string;
 }
 
-const Button = ({ name, backgroundColor, textColor = "purple" }: Props) => {
+const Button = ({
+  name,
+  height,
+  width,
+  backgroundColor,
+  textColor = "purple",
+}: Props) => {
   return (
     <div
       onClick={() => {}}
       style={{
         backgroundColor,
-        width: "100px",
+        width,
         // color: textColor,
         color: textColor ? textColor : "purple",
-        borderRadius: 10,
+        borderRadius: "20px",
+        height,
+        textAlign: "center",
+        fontWeight: "bolder",
+        fontSize: "16px",
         padding: "10px 30px",
         justifyContent: "center",
       }}
