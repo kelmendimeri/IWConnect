@@ -19,7 +19,6 @@ export const Search = () => {
         title="Trends for you"
         icon={<i className="bi bi-gear"></i>}
       />
-      <DarkBackground title="Who to follow" />
     </nav>
   );
 };
