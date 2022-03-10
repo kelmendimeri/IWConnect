@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from "react";
 import Post from "./Components/Post/Post";
 import type { Post as PostType } from "./Types";
-export const Main = () => {
+
+const Main = () => {
   const [data, setDate] = useState<PostType[]>();
 
   useEffect(() => {
@@ -19,3 +20,5 @@ export const Main = () => {
     </main>
   );
 };
+
+export default Main;
