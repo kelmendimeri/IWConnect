@@ -1,16 +1,20 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 interface Props {
   icon?: any;
   text?: string;
+  to: string;
 }
 
-export const NavLink = ({ icon, text }: Props) => {
+export const NavLink = ({ to, icon, text }: Props) => {
   return (
     <Styled.Container>
-      <Styled.IconWrapper>{icon}</Styled.IconWrapper>
-      <Styled.TextWrapper>{text}</Styled.TextWrapper>
+      <Link to={to}>
+        <Styled.IconWrapper>{icon}</Styled.IconWrapper>
+        <Styled.TextWrapper>{text}</Styled.TextWrapper>
+      </Link>
     </Styled.Container>
   );
 };

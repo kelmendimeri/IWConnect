@@ -1,6 +1,5 @@
 import React from "react";
-import DarkBackground from "./Search/DarkBackground/DarkBackground";
-import SearchInput from "./Search/SearchInput";
+import SearchInput from "../Search/Components/SearchInput";
 
 export const Search = () => {
   return (
@@ -15,10 +14,6 @@ export const Search = () => {
       }}
     >
       <SearchInput />
-      <DarkBackground
-        title="Trends for you"
-        icon={<i className="bi bi-gear"></i>}
-      />
     </nav>
   );
 };

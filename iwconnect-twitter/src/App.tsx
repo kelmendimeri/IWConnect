@@ -2,7 +2,9 @@ import React from "react";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
-import { Home } from "./containers/home/components/Home";
+import { Navbar } from "./containers/Navbar/Navbar";
+import Routes from "./state/Routes";
+import { Search } from "./containers/Search/Search";
 
 function App() {
   return (
@@ -10,7 +12,9 @@ function App() {
       <div className="row">
         <div className="container" style={{ color: "white", height: "100vh" }}>
           {/*application goes here*/}
-          <Home />
+          <Navbar />
+          <Routes />
+          <Search />
         </div>
       </div>
     </div>
