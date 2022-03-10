@@ -1,6 +1,6 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import styled from "styled-components";
+import { NavLink as RRDNavLink } from "react-router-dom";
 
 interface Props {
   icon?: any;
@@ -10,23 +10,34 @@ interface Props {
 
 export const NavLink = ({ to, icon, text }: Props) => {
   return (
-    <Styled.Container>
-      <Link to={to}>
-        <Styled.IconWrapper>{icon}</Styled.IconWrapper>
-        <Styled.TextWrapper>{text}</Styled.TextWrapper>
-      </Link>
+    <Styled.Container
+      style={(props) => {
+        console.log("is active", props);
+        return {
+          background: props.isActive ? "blue" : "red",
+        };
+      }}
+      to={to}
+    >
+      <Styled.IconWrapper>{icon}</Styled.IconWrapper>
+      <Styled.TextWrapper>{text}</Styled.TextWrapper>
     </Styled.Container>
   );
 };
 
 const Styled = {
-  Container: styled.div`
+  Container: styled(RRDNavLink)`
     display: flex;
     flex-direction: row;
     align-items: center;
     // border: 1px solid white; // used to see the position of the navlinks
     height: 50px;
+    justify-content: center;
     margin-bottom: 10px;
+    &:hover {
+      background: grey;
+      border-radius: 25px;
+    }
   `,
   IconWrapper: styled.div`
     display: flex;

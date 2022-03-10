@@ -9,6 +9,11 @@ export const Navbar = () => {
       <NavLink to="/" icon={<i className="bi bi-twitter"></i>} />
       <NavLink to="/" text="Home" icon={<i className="bi bi-house"></i>} />
       <NavLink
+        to="/posts"
+        text="Posts"
+        icon={<i className="bi bi-heart"></i>}
+      />
+      <NavLink
         to="/explore"
         text="Explore"
         icon={<i className="bi bi-hash"></i>}
