@@ -9,16 +9,7 @@ interface Props {
 }
 
 export const SearchNavLink = ({ icon, text, category, countTweets }: Props) => {
-  return (
-    <Styled.Container>
-      <>
-        <Styled.CategoryWrapper>{category}</Styled.CategoryWrapper>
-        <Styled.TextWrapper>{text}</Styled.TextWrapper>
-        <Styled.CountTweets>{countTweets}</Styled.CountTweets>
-      </>
-      <Styled.IconWrapper>{icon}</Styled.IconWrapper>
-    </Styled.Container>
-  );
+  return <Styled.Container></Styled.Container>;
 };
 
 const Styled = {
@@ -28,7 +19,7 @@ const Styled = {
     border: 1px solid red;
     height: 70px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
   `,
   IconWrapper: styled.div`
     // position: relative;
