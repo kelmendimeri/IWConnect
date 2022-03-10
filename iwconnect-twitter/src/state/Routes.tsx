@@ -1,4 +1,4 @@
-import Main from "containers/home/components/Main/Main";
+import Main from "../containers/home/components/Main/Main";
 import React from "react";
 import { Route, Routes as RRDRoutes } from "react-router-dom";
 
