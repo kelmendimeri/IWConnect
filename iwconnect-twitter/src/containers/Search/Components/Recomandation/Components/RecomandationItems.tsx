@@ -29,7 +29,10 @@ const Styled = {
   Container: styled.div`
     display: flex;
     flex-direction: column;
-    height: 100px;
+    // height: 80px;
+    &:hover {
+      background: lightblue;
+    }
   `,
   Items: styled.div`
     // margin: 20px;
@@ -38,7 +41,9 @@ const Styled = {
     justify-content: space-around;
     // align-items: center;
   `,
-  Item: styled.div``,
+  Item: styled.div`
+    margin: 4px 0;
+  `,
   IconWrapper: styled.div``,
   Category: styled.p`
     color: grey;

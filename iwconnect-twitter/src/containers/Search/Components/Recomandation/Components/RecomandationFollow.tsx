@@ -36,6 +36,9 @@ const Styled = {
     flex-direction: column;
     border-radius: 25px;
     justify-content: center;
+    &:hover {
+      background: lightblue;
+    }
   `,
   Header: styled.div`
     color: white;

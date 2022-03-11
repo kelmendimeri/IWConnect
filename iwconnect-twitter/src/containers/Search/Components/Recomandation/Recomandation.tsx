@@ -71,6 +71,7 @@ const Styled = {
   Items: styled.div`
     // margin: 20px;
     display: flex;
+
     flex-direction: column;
     justify-content: space-around;
     // align-items: center;

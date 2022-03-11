@@ -46,7 +46,6 @@ const Styled = {
   `,
   TextWrapper: styled.h6`
     color: white;
-
     // margin-left: 0;
   `,
   IconWrapper: styled.span`
@@ -62,6 +61,7 @@ const Styled = {
   `,
   Item: styled.div`
     display: flex;
+    maring: 4px 0;
     flex-direction: column;
   `,
   More: styled.button`
