@@ -32,6 +32,7 @@ const Main = () => {
             title={post.title}
             content={post.body}
             id={post.id}
+            userId={post.userId}
           />
         );
       })}

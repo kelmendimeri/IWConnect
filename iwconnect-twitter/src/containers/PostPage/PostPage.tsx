@@ -1,17 +1,10 @@
 import * as React from "react";
-import {
-  useLocation,
-  useNavigate,
-  useParams,
-  useSearchParams,
-} from "react-router-dom";
+import { useLocation, useNavigate, useParams } from "react-router-dom";
 
 function Post(props: any) {
   const params = useParams();
   const navigate = useNavigate();
   const location = useLocation();
-  const [searchParams, setSearchParams] = useSearchParams();
-  console.log("props", location);
   const [data, setData] = React.useState();
   React.useEffect(() => {
     const fetchFromApi = async () => {
@@ -20,15 +13,16 @@ function Post(props: any) {
       );
       const data = await response.json();
       setData(data);
-      if ((!location?.state as any)?.id) {
-        fetchFromApi();
-      }
     };
+    if (!(location?.state as any)?.id) {
+      fetchFromApi();
+    }
+    console.log("kelmend params", location);
   }, [params.id]);
-  console.log();
+
   return (
     <div>
-      Post Number
+      Post Number {params.id}
       <button
         onClick={() => {
           navigate(`/posts/97`);

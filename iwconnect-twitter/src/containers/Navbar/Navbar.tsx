@@ -52,7 +52,8 @@ export const Navbar = () => {
 const Styled = {
   Container: styled.nav`
     backgroung: cyan;
-    height: 100vh;
+    // height: 100vh;
+    // position: fixed;
   `,
   Title: styled.h1``,
 };

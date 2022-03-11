@@ -8,7 +8,7 @@ interface Props {
   title: string;
   content: string;
   id: number;
-  userId?: number;
+  userId: number;
   // post: PostType;
 }
 

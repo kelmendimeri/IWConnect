@@ -1,7 +1,7 @@
-import PostPage from "../containers/PostPage/PostPage";
 import React from "react";
 import { Route, Routes as RRDRoutes } from "react-router-dom";
 import Main from "../containers/home/components/Main/Main";
+import PostPage from "../containers/PostPage/PostPage";
 
 function Routes() {
   return (
