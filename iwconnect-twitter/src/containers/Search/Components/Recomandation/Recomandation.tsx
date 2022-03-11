@@ -83,7 +83,9 @@ const Styled = {
   More: styled.button`
     color: cyan;
     background: transparent;
-    border: none;
     height: 50px;
+    outline: none;
+    inline: none;
+    border: none;
   `,
 };

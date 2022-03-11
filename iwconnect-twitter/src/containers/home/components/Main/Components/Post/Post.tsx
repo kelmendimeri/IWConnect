@@ -16,7 +16,18 @@ export default function Post({ id, title, content, userId }: Props) {
   const navigate = useNavigate();
 
   return (
-    <Styled.Container>
+    <Styled.Container
+      onClick={() => {
+        navigate(`/posts/${id}`, {
+          state: {
+            title: title,
+            content: content,
+            userId: userId,
+            id: id,
+          },
+        });
+      }}
+    >
       <Styled.AdditionalInfo>BitCOin cryptocurrency</Styled.AdditionalInfo>
       <Styled.Wrapper>
         <Styled.IconWrapper></Styled.IconWrapper>
@@ -37,20 +48,6 @@ export default function Post({ id, title, content, userId }: Props) {
           </Styled.Action>
         </Styled.MainContent>
       </Styled.Wrapper>
-      <button
-        onClick={() => {
-          navigate(`/posts/${id}`, {
-            state: {
-              title: title,
-              content: content,
-              userId: userId,
-              id: id,
-            },
-          });
-        }}
-      >
-        navigate to post
-      </button>
     </Styled.Container>
   );
 }
@@ -61,6 +58,7 @@ const Styled = {
     flex-direction: column;
     width: 100%;
     align-items: center;
+    // background: none;
     justify-content: center;
     margin-bottom: 10px;
     // border: 1px solid white;

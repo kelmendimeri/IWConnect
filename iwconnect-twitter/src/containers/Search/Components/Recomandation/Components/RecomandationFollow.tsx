@@ -90,9 +90,14 @@ const Styled = {
     border-radius: 25px;
     background: white;
     outline: none;
+    inline: none;
+    border: none;
   `,
   More: styled.button`
     color: cyan;
+    outline: none;
+    inline: none;
+    border: none;
     background: transparent;
     border: none;
   `,
