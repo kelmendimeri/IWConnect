@@ -1,7 +1,7 @@
 import React from "react";
 
 interface Props {
-  backgroundColor: string;
+  backgroundColor?: string;
   textColor?: string;
   name?: string;
   width?: string;
