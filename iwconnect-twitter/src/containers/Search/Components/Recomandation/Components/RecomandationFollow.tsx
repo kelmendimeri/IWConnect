@@ -2,9 +2,10 @@ import * as React from "react";
 import styled from "styled-components";
 
 interface Props {
-  profileImageSrc?: string;
   title: string;
   username: string;
+
+  profileImageSrc?: string;
 }
 
 function RecomandationFollow({ username, title, profileImageSrc }: Props) {
@@ -36,19 +37,6 @@ const Styled = {
     flex-direction: column;
     border-radius: 25px;
     justify-content: center;
-    &:hover {
-      background: lightblue;
-    }
-  `,
-  Header: styled.div`
-    color: white;
-    font-weight: bold;
-    display: flex;
-    flex-directoin: row;
-    justify-content: space-around;
-    height: 40px;
-    align-items: center;
-    align-content: center;
   `,
   Main: styled.div`
     color: white;

@@ -30,7 +30,6 @@ const Styled = {
     display: flex;
     flex-direction: row;
     align-items: center;
-    // border: 1px solid white; // used to see the position of the navlinks
     height: 50px;
     justify-content: center;
     margin-bottom: 10px;

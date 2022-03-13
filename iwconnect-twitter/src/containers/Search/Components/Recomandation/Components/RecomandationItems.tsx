@@ -9,16 +9,14 @@ interface Props {
 function RecomandationItem({ tweetsNumber, category, title }: Props) {
   return (
     <Styled.Container>
-      <Styled.Items>
-        <Styled.Item>
-          <Styled.Category>{category}</Styled.Category>
-          <Styled.Title>{title}</Styled.Title>
-          <Styled.TweetNumber>{tweetsNumber} Tweets</Styled.TweetNumber>
-        </Styled.Item>
-        <Styled.IconWrapper>
-          <i className="bi bi-three-dots"></i>
-        </Styled.IconWrapper>
-      </Styled.Items>
+      <Styled.Item>
+        <Styled.Category>{category}</Styled.Category>
+        <Styled.Title>{title}</Styled.Title>
+        <Styled.TweetNumber>{tweetsNumber} Tweets</Styled.TweetNumber>
+      </Styled.Item>
+      <Styled.IconWrapper>
+        <i className="bi bi-three-dots"></i>
+      </Styled.IconWrapper>
     </Styled.Container>
   );
 }
@@ -30,17 +28,14 @@ const Styled = {
     display: flex;
     flex-direction: column;
     // height: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
     &:hover {
       background: lightblue;
     }
   `,
-  Items: styled.div`
-    // margin: 20px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    // align-items: center;
-  `,
+
   Item: styled.div`
     margin: 4px 0;
   `,

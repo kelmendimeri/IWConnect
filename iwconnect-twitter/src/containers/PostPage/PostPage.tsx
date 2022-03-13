@@ -24,7 +24,6 @@ function Post({ retweet, likes }: Props, props: any) {
     if (!(location?.state as any)?.id) {
       fetchFromApi();
     }
-    console.log("kelmend params", location);
   }, [params.id]);
 
   return (
@@ -33,7 +32,6 @@ function Post({ retweet, likes }: Props, props: any) {
         <button
           style={{
             float: "left",
-            // borderRadius: "25px",
             background: "none",
             border: "none",
             color: "white",
