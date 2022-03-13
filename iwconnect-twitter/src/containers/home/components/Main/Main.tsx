@@ -3,7 +3,7 @@ import Post from "./Components/Post/Post";
 import type { Post as PostType } from "./Types";
 
 const Main = () => {
-  const [data, setDate] = useState<PostType[]>();
+  const [data, setData] = useState<PostType[]>();
 
   useEffect(() => {
     //   fetch("https://jsonplaceholder.typicode.com/posts")
@@ -16,7 +16,7 @@ const Main = () => {
         "https://jsonplaceholder.typicode.com/posts"
       );
       const posts: PostType[] = await response.json();
-      setDate(posts);
+      setData(posts);
     };
     fetchFromApi();
   }, []);

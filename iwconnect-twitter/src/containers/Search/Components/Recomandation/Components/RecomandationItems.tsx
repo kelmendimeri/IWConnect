@@ -27,7 +27,6 @@ const Styled = {
   Container: styled.div`
     display: flex;
     flex-direction: column;
-    // height: 80px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;

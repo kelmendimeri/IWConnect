@@ -4,7 +4,6 @@ import styled from "styled-components";
 interface Props {
   title: string;
   username: string;
-
   profileImageSrc?: string;
 }
 

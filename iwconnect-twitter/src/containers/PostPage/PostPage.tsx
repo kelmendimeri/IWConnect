@@ -24,7 +24,7 @@ function Post({ retweet, likes }: Props, props: any) {
     if (!(location?.state as any)?.id) {
       fetchFromApi();
     }
-  }, [params.id]);
+  }, [params.id, location.state, data]);
 
   return (
     <Styled.Container className="col-6">
@@ -46,7 +46,7 @@ function Post({ retweet, likes }: Props, props: any) {
         <h4>Tweet</h4>
       </Styled.Header>
       {/* need to find how to get data from location.state*/}
-      <Styled.Tweet>{location.pathname}</Styled.Tweet>{" "}
+      <Styled.Tweet>{location.pathname}</Styled.Tweet>
       <Styled.Created>{Date().toLocaleString()}</Styled.Created>
       <Styled.ActionResults>
         <Styled.ActionData>{retweet} ReTweets</Styled.ActionData>

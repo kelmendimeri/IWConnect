@@ -58,7 +58,7 @@ const Styled = {
     justify-content: space-around;
     height: 50px;
     align-items: center;
-    align-contenr: center;
+    align-content: center;
   `,
   TextWrapper: styled.h6`
     color: white;
